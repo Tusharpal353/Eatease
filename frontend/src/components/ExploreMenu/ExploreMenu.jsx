@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 function ExploreMenu({category,setCategory}) {
   return (
     <div className="explore-menu" id='explore-menu'>
-      <h1>Explore Our Menu</h1>
-      <p className='explore-menu-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam voluptas sapiente pariatur distinctio beatae vero quidem, rerum neque autem, fuga eum corrupti nemo et quos earum culpa rem minima! Nemo.</p>
+      <h1>Explore Our Restaurants</h1>
+      <p className='explore-menu-text'>
+Explore our wide variety of restaurants to satisfy all your culinary needs, whether you are looking for a quick bite, a leisurely meal with family, or a fine dining experience to celebrate a special occasion. We have options that cater to every taste and preference!</p>
       <div className="explore-menu-list">
         {
         menu_list.map((item,index)=>{

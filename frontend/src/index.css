@@ -66,6 +66,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+#root{
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+/* 
+bo{
+  background: var(#1f242d);
+  color: var(#fff);
+} */
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
  font-family: "Outfit", sans-serif;
@@ -73,8 +91,68 @@ button:focus-visible {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ scroll-behavior: smooth;
 }
 .app{
   width: 80%;
   margin: auto;
+}
+@media(max-width:1050px){
+  .navbar-logo{
+    width: 140px;
+  }
+  .navbar-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right{
+    gap: 30px;
+  }
+  .navbar-right img{
+    width: 22px;
+  }
+  .navbar-right button{
+    padding: 8px 25px;
+  }
+}
+
+@media(max-width:900px){
+  .navbar-logo{
+    width: 120px;
+  }
+  .navbar-menu{
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right{
+    gap: 20px;
+  }
+  .navbar-right img{
+    width: 20px;
+  }
+  .navbar-right button{
+    padding: 7px 20px;
+  }
+}
+@media(max-width:750px){
+  .navbar-menu{
+    display: none;
+  }
+}
+@media(max-width:1050px){
+  .header-content{
+    max-width: 65%;
+  }
+  .header-content p{
+    display: none;
+  }
+  .header-content button{
+    padding:2vw 4vw;
+  }
+}
+@media(max-width:1050px){
+  .explore-menu-text{
+    max-width: 100%;
+    font-size:14px;
+  }
 }

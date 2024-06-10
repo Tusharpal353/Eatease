@@ -1,0 +1,10 @@
+.heading {
+    text-align: center;
+    justify-content: center;
+}
+
+body{
+    background: var(#1f242d);
+    /* color: var(#fff); */
+       color: var(#1f242d)
+  }

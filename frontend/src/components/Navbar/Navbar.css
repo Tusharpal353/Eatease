@@ -1,38 +1,46 @@
-.navbar{
-    display:flex;
+.navbar {
+    display: flex;
     padding: 20px 10px;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    width: 150px;
+
+.logo {
+    width: 150x;
 }
-.navbar-menu{
+
+.navbar-menu {
     display: flex;
     list-style-type: none;
     gap: 20px;
     color: #49557e;
     font-size: 18px;
 }
-.navbar li{
+
+.navbar li {
     cursor: pointer;
 }
-.navbar-right{
+
+.navbar-right {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.basket-img{
+
+.basket-img {
     width: 50px;
 }
-.basket-img:hover{
+
+.basket-img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-.basket-icon{
+
+.basket-icon {
     position: relative;
 }
-.basket-icon .dot{
+
+.basket-icon .dot {
     position: absolute;
     min-width: 10px;
     min-height: 10px;
@@ -41,7 +49,8 @@
     top: -5px;
     right: -5px;
 }
-.navbar button{
+
+/* .navbar button {
     background: transparent;
     font-size: 16px;
     color: #49557e;
@@ -50,11 +59,89 @@
     border-radius: 50px;
     cursor: pointer;
     transition: 0.5s;
-}
-.navbar button:hover{
+} */
+
+.navbar button:hover {
     background-color: #fff4f2;
 }
-.navbar li.active{
+
+.navbar li.active {
     padding-bottom: 2px;
     border-bottom: 2px solid black;
-  }
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #49557e;
+}
+
+
+
+.box {
+    width: auto;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}

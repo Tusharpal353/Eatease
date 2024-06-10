@@ -1,4 +1,4 @@
-import logo from './images/logo1.png'
+import logo from './images/logo.png'
 import basket from './images/basket.png'
 import menu_1 from './images/menu-1.jpg'
 import menu_2 from './images/menu-2.jpg'
@@ -9,6 +9,15 @@ import menu_6 from './images/menu-6.jpg'
 import menu_7 from './images/menu-7.jpg'
 import menu_8 from './images/menu-8.jpg'
 import rating from './images/rating_starts.jpeg'
+import add_icon_white from './images/add_icon_white.png'
+import add_icon_green from './images/add_icon_green.png'
+import remove_icon_red from './images/remove_icon_red.png'
+import play_store from './images/playstore.png'
+import app_store from './images/appstore.png'
+import facebook from './images/facebook.png'
+import twitter from './images/twitter.png'
+import linkedin from './images/linkedin.png'
+import cross_icon from './images/cross_icon.png'
 
 import food_1 from './images/food_1.jpg'
 import food_2 from './images/food_2.jpg'
@@ -44,300 +53,349 @@ import food_31 from './images/food_31.jpg'
 import food_32 from './images/food_32.jpg'
 
 
-export const assets ={
+
+
+export const assets = {
     logo,
     basket,
-    rating
+    rating,
+    add_icon_white,
+    add_icon_green,
+    remove_icon_red,
+    play_store,
+    app_store,
+    facebook,
+    twitter,
+    linkedin,
+    cross_icon
 }
-export const menu_list=[
+export const menu_list = [
     {
-        menu_name:"Salad",
-        menu_image:menu_1
+        menu_name: "Italian",
+        menu_image: menu_1
     },
     {
-        menu_name:"Starter",
-        menu_image:menu_2
+        menu_name: "Chinese",
+        menu_image: menu_2
     },
     {
-        menu_name:"Pizza",
-        menu_image:menu_3
+        menu_name: "Mexican",
+        menu_image: menu_3
     },
     {
-        menu_name:"Burger",
-        menu_image:menu_4
+        menu_name: "Indian",
+        menu_image: menu_4
     },
     {
-        menu_name:"Rolls",
-        menu_image:menu_5
+        menu_name: "Japanese",
+        menu_image: menu_5
     },
     {
-        menu_name:"Pasta",
-        menu_image:menu_6
+        menu_name: "American",
+        menu_image: menu_6
     },
     {
-        menu_name:"Beverages",
-        menu_image:menu_7
+        menu_name: "Mediterranean",
+        menu_image: menu_7
     },
     {
-        menu_name:"Dessert",
-        menu_image:menu_8
+        menu_name: "French",
+        menu_image: menu_8
     }
 ]
-export const food_list =[
+
+
+export const food_list = [
     {
         _id: "1",
-        name: "Spaghetti Carbonara",
+        name: "Bella Italia",
         image: food_1,
         price: 12.99,
-        description: "Classic Italian pasta dish with creamy sauce, bacon, and cheese.",
-        category: "Italian"
+        description: "Authentic Italian cuisine in a cozy setting.",
+        category: "Mexican",
+        avgRating: 4.4
     },
     {
         _id: "2",
-        name: "Chicken Tikka Masala",
+        name: "Golden Dragon",
         image: food_2,
         price: 14.49,
-        description: "Tender chicken pieces cooked in a creamy tomato sauce with Indian spices.",
-        category: "Indian"
+        description: "Classic Chinese dishes with a modern twist.",
+        category: "Chinese",
+        avgRating: 4
     },
     {
         _id: "3",
-        name: "Sushi Platter",
+        name: "El Sombrero",
         image: food_3,
         price: 18.99,
-        description: "Assorted sushi rolls including California rolls, salmon rolls, and tuna rolls.",
-        category: "Japanese"
+        description: "Mexican flavors with festive atmosphere.",
+        category: "Mexican",
+        avgRating: 3
     },
     {
         _id: "4",
-        name: "Caesar Salad",
+        name: "Spice Route",
         image: food_4,
         price: 8.99,
-        description: "Fresh romaine lettuce tossed in Caesar dressing with croutons and parmesan cheese.",
-        category: "Salads"
+        description: "Traditional Indian spices and rich flavors.",
+        category: "Indian",
+        avgRating: 4.2
     },
     {
         _id: "5",
-        name: "Margherita Pizza",
+        name: "Sushi Zen",
         image: food_5,
         price: 10.99,
-        description: "Classic Italian pizza topped with tomato sauce, fresh mozzarella, and basil leaves.",
-        category: "Italian"
+        description: "Fresh sushi and serene ambiance.",
+        category: "Japanese",
+        avgRating: 3
     },
     {
         _id: "6",
-        name: "Beef Burger",
+        name: "The Burger Joint",
         image: food_6,
         price: 9.99,
-        description: "Juicy beef patty topped with lettuce, tomato, onion, and pickles on a sesame seed bun.",
-        category: "Burgers"
+        description: "Juicy burgers and casual dining.",
+        category: "American",
+        avgRating: 2
     },
     {
         _id: "7",
-        name: "Pad Thai",
+        name: "Taverna Greco",
         image: food_7,
         price: 11.99,
-        description: "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy sauce.",
-        category: "Thai"
+        description: "Authentic Mediterranean meals.",
+        category: "Mediterranean",
+        avgRating: 4.5
     },
     {
         _id: "8",
-        name: "Miso Soup",
+        name: "Le Petit Bistro",
         image: food_8,
         price: 5.99,
-        description: "Traditional Japanese soup made with fermented soybean paste, tofu, and seaweed.",
-        category: "Japanese"
+        description: "Charming French bistro,delicious pastries.",
+        category: "French" ,
+        avgRating: 3
     },
     {
         _id: "9",
-        name: "Fish and Chips",
+        name: "Trattoria Roma",
         image: food_9,
         price: 13.99,
-        description: "Crispy battered fish served with thick-cut fries and tartar sauce.",
-        category: "British"
+        description: "Rustic Italian fare and warm hospitality.",
+        category: "Italian",
+        avgRating: 5
     },
     {
         _id: "10",
-        name: "Pho",
+        name: " Panda Palace",
         image: food_10,
         price: 10.49,
-        description: "Vietnamese noodle soup with beef broth, rice noodles, and thinly sliced beef.",
-        category: "Vietnamese"
+        description: "Delicious Chinese cuisine for all tastes.",
+        category: "Chinese",
+        avgRating: 2.4
     },
     {
         _id: "11",
-        name: "Margherita Flatbread",
+        name: "Taco Loco",
         image: food_11,
         price: 7.99,
-        description: "Thin and crispy flatbread topped with tomato sauce, mozzarella cheese, and fresh basil.",
-        category: "Italian"
+        description: "Flavorful Mexican street food favorites.",
+        category: "Mexican",
+        avgRating: 4.1
+
     },
     {
         _id: "12",
-        name: "Chicken Caesar Wrap",
+        name: "Curry Corner",
         image: food_12,
         price: 9.49,
-        description: "Grilled chicken, romaine lettuce, Caesar dressing, and parmesan cheese wrapped in a tortilla.",
-        category: "Wraps"
+        description: "Spicy Indian curries and naan bread.",
+        category: "Indian",
+        avgRating: 3.6
     },
     {
         _id: "13",
-        name: "Tom Yum Soup",
+        name: "Samurai Sushi",
         image: food_13,
         price: 8.99,
-        description: "Spicy and sour Thai soup with shrimp, mushrooms, lemongrass, and chili peppers.",
-        category: "Thai"
+        description: "Exquisite sushi traditional Japanese dishes.",
+        category: "Japanese",
+        avgRating: 4.3
     },
     {
         _id: "14",
-        name: "Chicken Alfredo Pasta",
+        name: "American Diner",
         image: food_14,
         price: 13.99,
-        description: "Creamy pasta dish with grilled chicken, Alfredo sauce, and parmesan cheese.",
-        category: "Italian"
+        description: "Classic American food and retro vibes.",
+        category: " American" ,
+        avgRating: 4.4
     },
     {
         _id: "15",
-        name: "Tacos",
+        name: "Olive Grove",
         image: food_15,
         price: 9.99,
-        description: "Soft corn tortillas filled with your choice of seasoned meat, lettuce, cheese, and salsa.",
-        category: "Mexican"
+        description: "Mediterranean delights, relaxing ambiance.",
+        category: "Mediterranean" ,
+        avgRating: 4.1
     },
     {
         _id: "16",
-        name: "Greek Salad",
+        name: "Café de Paris",
         image: food_16,
         price: 8.49,
-        description: "Fresh salad with tomatoes, cucumbers, olives, feta cheese, and Greek dressing.",
-        category: "Salads"
+        description: "Elegant French café with gourmet offerings.",
+        category: "French"
+        ,
+        avgRating: 4.2
     },
     {
         _id: "17",
-        name: "Chicken Kebabs",
+        name: "La Dolce Vita",
         image: food_17,
         price: 11.99,
-        description: "Grilled chicken skewers marinated in Mediterranean spices, served with rice and tzatziki sauce.",
-        category: "Mediterranean"
+        description: "Delightful Italian desserts and coffee.",
+        category: "Italian",
+        avgRating: 4.3
     },
     {
         _id: "18",
-        name: "Vegetable Stir Fry",
+        name: "Mandarin House",
         image: food_18,
         price: 10.49,
-        description: "Assorted vegetables stir-fried in a savory sauce, served over rice.",
-        category: "Asian"
+        description: "Authentic Chinese meals in warm ambiance.",
+        category: "Chinese",
+        avgRating: 4.4
     },
     {
         _id: "19",
-        name: "Beef Tacos",
+        name: "Fiesta Mexicana",
         image: food_19,
         price: 10.99,
-        description: "Tacos filled with seasoned ground beef, lettuce, cheese, and salsa.",
-        category: "Mexican"
+        description: "Mexican fiesta with vibrant flavors.",
+        category: "Mexican",
+        avgRating: 4.1
     },
     {
         _id: "20",
-        name: "Caprese Salad",
+        name: "Taj Mahal",
         image: food_20,
         price: 7.99,
-        description: "Fresh salad with ripe tomatoes, mozzarella cheese, basil leaves, and balsamic glaze.",
-        category: "Salads"
+        description: "Rich Indian cuisine in a regal setting.",
+        category: "Indian",
+        avgRating: 3.5
     },
     {
         _id: "21",
-        name: "Penne Arrabbiata",
+        name: "Pasta Fresca",
         image: food_21,
         price: 11.49,
-        description: "Penne pasta in a spicy tomato sauce with garlic, chili peppers, and parsley.",
-        category: "Italian"
+        description: "Fresh pasta and Italian specialties.",
+        category: "Italian",
+        avgRating: 3.2
     },
     {
         _id: "22",
-        name: "Shrimp Fried Rice",
+        name: "Ramen House",
         image: food_22,
         price: 12.99,
-        description: "Fried rice with shrimp, eggs, vegetables, and soy sauce.",
-        category: "Asian"
+        description: "Cozy spot for delicious ramen bowls.",
+        category: "Japanese",
+        avgRating: 4.2
     },
+
     {
         _id: "23",
-        name: "Falafel Wrap",
+        name: "BBQ Nation",
         image: food_23,
         price: 8.99,
-        description: "Deep-fried chickpea patties, lettuce, tomatoes, and tahini sauce wrapped in a pita.",
-        category: "Mediterranean"
+        description: "Hearty American barbecue and sides.",
+        category: "American",
+        avgRating: 4.2
     },
     {
         _id: "24",
-        name: "Hawaiian Pizza",
+        name: "Aegean Delight",
         image: food_24,
         price: 11.99,
-        description: "Pizza topped with ham, pineapple, and mozzarella cheese.",
-        category: "Italian"
+        description: "Greek specialties in delightful atmosphere.",
+        category: "Mediterranean",
+        avgRating: 4.2
     },
     {
         _id: "25",
-        name: "Chicken Quesadilla",
+        name: "Bistro Belle",
         image: food_25,
         price: 9.99,
-        description: "Grilled chicken and melted cheese between two tortillas, served with salsa and sour cream.",
-        category: "Mexican"
+        description: "Chic French bistro with gourmet dishes.",
+        category: "French",
+        avgRating: 4.2
     },
     {
         _id: "26",
-        name: "Tomato Basil Soup",
+        name: "Cantina Feliz",
         image: food_26,
         price: 6.99,
-        description: "Creamy tomato soup with fresh basil leaves, served with garlic bread.",
-        category: "Soups"
+        description: "Lively Mexican eatery with bold flavors.",
+        category: "Mexican",
+        avgRating: 4.2
     },
     {
         _id: "27",
-        name: "Beef Burrito",
+        name: "Saffron Lounge",
         image: food_27,
         price: 10.99,
-        description: "Large flour tortilla filled with seasoned beef, rice, beans, cheese, and salsa.",
-        category: "Mexican"
+        description: "Upscale Indian dining experience.",
+        category: "Indian",
+        avgRating: 4.2
     },
     {
         _id: "28",
-        name: "Chicken Noodle Soup",
+        name: "Tokyo Grill",
         image: food_28,
         price: 7.99,
-        description: "Classic soup with tender chicken, noodles, carrots, celery, and onions in a savory broth.",
-        category: "Soups"
+        description: "Japanese grilled specialties and sushi.",
+        category: "Japanese",
+        avgRating: 4.2
     },
     {
         _id: "29",
-        name: "Vegetarian Pizza",
+        name: "Dragon Express",
         image: food_29,
         price: 12.49,
-        description: "Pizza topped with assorted vegetables such as bell peppers, onions, olives, and mushrooms.",
-        category: "Italian"
+        description: "Quick and tasty Chinese food.",
+        category: "Chinese",
+        avgRating: 4.2
     },
     {
         _id: "30",
-        name: "Egg Rolls",
+        name: "Route 66 Diner",
         image: food_30,
         price: 6.99,
-        description: "Crispy fried rolls filled with vegetables and sometimes meat, served with sweet and sour sauce.",
-        category: "Asian"
+        description: "Nostalgic American diner with classic eats.",
+        category: "American",
+        avgRating: 4.2
     },
     {
         _id: "31",
-        name: "Chicken Caesar Salad",
+        name: "Acropolis Taverna",
         image: food_31,
         price: 9.99,
-        description: "Grilled chicken breast served on a bed of romaine lettuce with Caesar dressing and croutons.",
-        category: "Salads"
+        description: "Greek cuisine with a scenic view.",
+        category: "Mediterranean",
+        avgRating: 4.2
     },
     {
         _id: "32",
-        name: "Beef Stroganoff",
+        name: "Maison du Vin",
         image: food_32,
         price: 15.49,
-        description: "Tender beef strips cooked in a creamy mushroom sauce, served over egg noodles.",
-        category: "European"
+        description: "French wine bar with exquisite dishes.",
+        category: "French",
+        avgRating: 4.2
     }
 ];
+

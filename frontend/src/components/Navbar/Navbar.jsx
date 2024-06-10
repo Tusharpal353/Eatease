@@ -1,28 +1,65 @@
-import { useState } from "react"
-import { assets } from "../../assets/asset"
-import "./Navbar.css"
+import { useState } from "react";
+import { assets } from "../../assets/asset";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
+
 function Navbar() {
-  const[menu,setMenu] = useState("Home")
+  const [menu, setMenu] = useState("Home");
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    window.location.reload();
+  };
+
+  const navigate = useNavigate();
+  const navigateToAdminPage = () => {
+    navigate("/admin");
+  };
   return (
     <div className="navbar">
       <img src={assets.logo} alt="" className="logo" />
       <ul className="navbar-menu">
-        <li onClick={() =>setMenu("Home") } className={menu==="Home" ? "active" :""}>Home</li>
-        <li onClick={() =>setMenu("Menu") } className={menu==="Menu" ? "active" :""}>Menu</li>
-        <li onClick={() =>setMenu("Mobile App") } className={menu==="Mobile App" ? "active" :""}>Mobile App</li>
-        <li onClick={() =>setMenu("Contact") } className={menu==="Contact" ? "active" :""}>Contact</li>
+        <li
+          onClick={() => setMenu("Home")}
+          className={menu === "Home" ? "active" : ""}
+        >
+          <Link to="/">Home</Link>
+        </li>
+        <li
+          onClick={() => setMenu("Menu")}
+          className={menu === "Menu" ? "active" : ""}
+        >
+          <a href="#explore-menu">Menu</a>
+        </li>
+        <li
+          onClick={() => setMenu("Mobile App")}
+          className={menu === "Mobile App" ? "active" : ""}
+        >
+          <a href="#app-download">Mobile-App</a>
+        </li>
+        <li
+          onClick={() => setMenu("Contact")}
+          className={menu === "Contact" ? "active" : ""}
+        >
+          <a href="#footer">Contact</a>
+        </li>
       </ul>
       <div className="navbar-right">
         <div className="basket-icon">
-          <img src={assets.basket} alt="" className="basket-img"/>
-          <div className="dot"></div>
+          <div>
+            <button className="box" onClick={handleLogout}>
+              Log Out
+            </button>
+          </div>
         </div>
-        <button>Sign in</button>
+        <div>
+          {<button className="box" onClick={navigateToAdminPage}>
+            Admin Page
+          </button>}
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
-
-
+export default Navbar;
