@@ -16,7 +16,7 @@ module.exports = () => {
 const mongoose = require("mongoose");
 
 module.exports = async () => {
-	const connectionString = process.env.DB;
+	const connectionString = process.env.MONGODB_CONNECT_URL;
 
 	try {
 		await mongoose.connect(connectionString, {
