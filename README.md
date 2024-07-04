@@ -18,6 +18,7 @@ A restaurant table booking application built with ReactJS, NodeJS, ExpressJS, an
 * **Frontend**: ReactJS
 * **Backend**: NodeJS, ExpressJS
 * **Database**: MongoDB
+* **Tools** :Bootstrap, Postman, Thunder client
 
 ## Getting Started
 
@@ -25,9 +26,10 @@ To run the application, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/table-booking-app.git`
 2. Install dependencies: `npm install`
-3. Start the server: `npm start`
-4. Open the application in your browser: `http://localhost:3000`
-5. For database copy link from .env file and open in Mongoose for the database
+3. Start the frontend server: `npm start`
+4. Start the Backend server: `nodemon server.js`
+5. Open the application in your browser: `http://localhost:3000`
+6. For database copy link from .env file and open in Mongoose for the database
 
 
 
