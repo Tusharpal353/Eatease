@@ -1,4 +1,6 @@
-![Screenshot 2024-07-05 135046](https://github.com/Tusharpal353/Eatease/assets/93274939/01145225-d674-4526-99dd-9b5f28f43709)# Table Booking Application
+
+
+# Table Booking Application
 =====================================================
 
 ![eatease photo](https://github.com/Tusharpal353/Eatease/assets/93274939/1de1d560-7b2a-4bf9-af43-1e3c73efc573)
