@@ -3,6 +3,10 @@
 # Table Booking Application
 
 
+https://github.com/user-attachments/assets/fe8cd33c-e7ca-40ed-a698-84de3b1ab62c
+
+
+
 A restaurant table booking application built with ReactJS, NodeJS, ExpressJS, and MongoDB.
 
 ![eatease photo](https://github.com/Tusharpal353/Eatease/assets/93274939/1de1d560-7b2a-4bf9-af43-1e3c73efc573)
