@@ -21,7 +21,7 @@ function BookingForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:5000/api/bookings", formData)
+    Axios.post("https://eatease-1vt9.onrender.com/api/bookings", formData)
       .then(() => {
         alert("Booking successful");
       })

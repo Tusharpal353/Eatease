@@ -13,7 +13,7 @@ function EditAdmin() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    Axios.get(`http://localhost:5000/api/bookings/${id}`)
+    Axios.get(`https://eatease-1vt9.onrender.com/api/bookings/${id}`)
       .then((res) => {
         const booking = res.data;
         setFormData({
@@ -37,7 +37,10 @@ function EditAdmin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.patch(`http://localhost:5000/api/bookings/update/${id}`, formData)
+    Axios.patch(
+      `https://eatease-1vt9.onrender.com/api/bookings/update/${id}`,
+      formData
+    )
       .then(() => {
         navigate("/admin"); // Redirect to admin page after update
       })

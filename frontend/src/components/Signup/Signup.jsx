@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:5000/api/users";
+      const url = "https://eatease-1vt9.onrender.com/api/users";
       const { data: res } = await axios.post(url, data);
       navigate("/login");
       console.log(res.message);
@@ -110,7 +110,7 @@ const Signup = () => {
     firstName: "",
     lastName: "",
     email: "",
-    password: ""
+    password: "",
   });
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -122,7 +122,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:5000/api/users";
+      const url = "https://eatease-1vt9.onrender.com/api/users";
       // Add role to the data object
       const payload = { ...data, role: 0 }; // Assuming role 0 is for a normal user
       const { data: res } = await axios.post(url, payload);

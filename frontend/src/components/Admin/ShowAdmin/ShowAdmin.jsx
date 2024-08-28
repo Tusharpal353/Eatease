@@ -13,7 +13,7 @@ function AdminPage() {
   const fetchBookings = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/bookings/fetchdata"
+        "https://eatease-1vt9.onrender.com/api/bookings/fetchdata"
       );
       setBookings(response.data);
     } catch (error) {
